@@ -15,7 +15,7 @@
 
 ## 위키
 
-https://wiki.zeropage.org/wiki.php/%EC%95%84%EB%AC%B4%EC%BD%98%EC%86%94%EB%8C%80%EC%9E%94%EC%B9%98
+https://wiki.zeropage.org/wiki.php/아무콘솔대잔치
 
 ## 개발
 
