@@ -46,7 +46,7 @@ void initUniqueRand(int historyLimit) {
 	randHistory = (int*)malloc(sizeof(int) * historyLimit);
 	randIndex = 0;
 }
-int uniqueRandInt(int a, int b) {
+int uniqueRandIntHelper(int a, int b) {
 	int r;
 	while(1) {
 		r = RANDINT(a, b);
@@ -58,7 +58,7 @@ int uniqueRandInt(int a, int b) {
 	}
 }
 int uniqueRandInt(int b) {
-	return uniqueRandInt(0, b);
+	return uniqueRandIntHelper(0, b);
 }
 
 /*
@@ -106,7 +106,7 @@ const char* itemNames[] = {
 	"직박구리폴더"
 };
 
-extern "C" ItemInfo* placeItems(int width, int height, int** answers) {
+ItemInfo* placeItems(int width, int height, int** answers) {
 	 // 정답 만들기
 	initUniqueRand(3);
 	for (int i = 0; i < 3; i++)
